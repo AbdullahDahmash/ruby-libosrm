@@ -61,6 +61,10 @@ Object TableFunc::wrap_table(Object self, Array coordinates, Hash opts) {
     // Convert Ruby object to native type
     osrm::TableParameters params;
 
+    if(coordinates.size() == 0) {
+        throw Exception(rb_eRuntimeError, "Cannot route without any coordinates given");
+    }
+
     Array::iterator it = coordinates.begin();
     Array::iterator end = coordinates.end();
     for(; it != end; ++it) {
