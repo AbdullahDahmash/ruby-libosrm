@@ -5,4 +5,4 @@ Rake::ExtensionTask.new "libosrm" do |ext|
   ext.lib_dir = "lib/libosrm"
 end
 
-task :default => [:compile]
+task default: [:compile]
