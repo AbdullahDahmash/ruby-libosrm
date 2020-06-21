@@ -75,7 +75,6 @@ else
     end
 end
 
-append_cflags("-DHAVE_CXX11")
+append_cflags("-DHAVE_CXX11 -DCMAKE_BUILD_TYPE=Release")
 
-#create_makefile "libosrm/libosrm"
 create_makefile "libosrm/ruby_libosrm"
