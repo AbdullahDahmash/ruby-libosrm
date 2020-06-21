@@ -39,10 +39,6 @@ class MiniPortileFixedCMake < MiniPortile
     super
   end
 
-  #def tmp_path
-  #    "nya"
-  #end
-
   def work_path
       orig = super
       Dir.mkdir "#{orig}/build" unless Dir.exist? "#{orig}/build"
