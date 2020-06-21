@@ -1,4 +1,4 @@
 
 libosrm:
-    version: "5.23.0"
-    download_uri: "https://github.com/Project-OSRM/osrm-backend/archive/master.zip"
+    version: "5.22.5"
+    download_uri: "https://github.com/scd31/osrm-backend/archive/5.22.zip"
